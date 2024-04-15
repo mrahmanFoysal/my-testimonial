@@ -1,0 +1,158 @@
+/* @media(max-width:575.98px){ */
+  /* .menu-bg{
+    background-color: gray;
+  }
+
+  .menu-bg img{
+    width: 85%;
+  }
+  .menu-bg i{
+    color: #fff;
+  }
+  
+    .navbar-light .navbar-toggler {
+      border-color: #fff;
+    }
+    .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: 0 0 0 transparent;
+    }
+    .menu-bg ul{
+      text-align: center;
+    } */
+
+/*  
+} */
+/* @media(min-width:576px) and (max-width:767.98px){ */
+/* 
+  .menu-bg{
+    background-color: tomato;
+  }
+  .menu-bg img{
+    width: 95%;
+  }
+  .menu-bg i{
+    color: gold;
+  }
+  
+    .navbar-light .navbar-toggler {
+      border-color: #fff;
+    }
+    .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: 0 0 0 transparent;
+    }
+    .menu-bg ul{
+      text-align: center;
+    }
+    #banner .carousel-item{
+      height: 350px;
+    } */
+
+/* } */
+    
+  
+  /* jodi uporer duytate bises kaj na thake tahole 0 theke ekta baniye etar moddey design gulu korley colbe*/
+        
+/*  
+ @media(max-width:767.98px){
+  .menu-bg{
+    background-color: gray;
+  }
+
+
+ .menu-bg img{
+    width: 85%;
+  }
+  .menu-bg i{
+    color: #fff;
+  }
+  
+    .navbar-light .navbar-toggler {
+      border-color: #fff;
+    }
+    .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: 0 0 0 transparent;
+    }
+    .menu-bg ul{
+      text-align: center;
+    }
+ }
+
+
+
+ 
+@media(main-width:768px) and (max-width:991.98px){
+
+}
+@media(main-width:992px) and (max-width:1199.98px){
+
+}
+@media(main-width:1200px) and (max-width:1399.98px){
+
+} */
+
+
+
+
+@media(max-width:575.98px) {
+  .menu-bg ul li a::after{
+    width: 100px;
+    
+}
+  .menu-bg ul li a:hover:after{
+     width: 100px; 
+}
+.menu-bg ul li a.active:after{
+  width: 100px;
+}
+.port-top,
+.port-bottom{
+  display: none;
+}
+.port-midlle{
+  margin: 40px 0;
+}
+.port-left::after{
+  left: 50%;
+  bottom: 0;
+}
+.port-left::before{
+  left: 50%;
+  bottom: 0;
+}
+.port-right::after{
+  left: 50%;
+  top: 0;
+}
+.port-right::before{
+  left: 50%;
+  top: 0;
+}
+
+.service-item{
+  margin: 20px 0;
+}
+.priz-col{
+  margin: 40px 30px;
+}
+}
+@media(main-width:767.98px) {
+
+}
+@media(main-width:576px) and (max-width:767.98px){
+
+}
+@media(main-width:768px) and (max-width:991.98px){
+
+}
+@media(main-width:992px) and (max-width:1199.98px){
+
+}
+@media(main-width:1200px) and (max-width:1399.98px){
+
+} 

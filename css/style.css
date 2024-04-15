@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+}
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+/* .logo img{
+   width: 20px;
+   height: 20px;
+} */
+
+img{
+   vertical-align: middle;
+}
+ul{
+   list-style: none;
+}
+/*  navbar part start */
+
+
+.menu-bg{
+    
+    border-bottom: 2px solid yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    
+}
+.bg{
+    background-color: cadetblue;
+    animation: name 2s;
+}
+@keyframes name{
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.menu-bg ul li a{
+    margin: 0 20px;
+    color: #fff !important;
+    position: relative;
+}
+.menu-bg ul li a::after{
+    position: absolute;
+    content: ' ';
+    height: 2px;
+    width: 0;
+    background-color: red;
+    bottom: -15px;
+    left: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 1;
+}
+.menu-bg ul li a:hover:after{
+    opacity: 1;
+     width: calc(100% - 13px); /*width: calc(100% -13px ); etar maddome list worder size onujayi ase */
+}
+.menu-bg ul li a.active:after{
+    opacity: 1;
+    width: 100%;
+}
+
+.banner-img{
+    padding: 200px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+  
+}
+.banner-slide{
+    position: relative;
+}
+.banner-over{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.084);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner-over i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+}
+.banner-text h2{
+    padding-top: 100px;
+}
+
+
+.port-midlle img{
+    height: 150px;
+    border-radius: 50%;
+    top: 50%;
+     left: 50%;
+     transform: translateY(-50%, -50%);
+   
+}
+.port-midlle{
+    position: relative;
+}
+.port-midlle::after{
+    position: absolute;
+    content: " ";
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.119);
+    top: 50%;
+     left: 50%;
+     border-radius: 50%;
+     transform: translate(-50%, -50%);
+    
+}
+.port-midlle::before{
+    position: absolute;
+    content: " ";
+    height: 180px;
+    width: 180px;
+    border: 2px solid pink;
+    top: 50%;
+     left: 50%;
+     border-radius: 50%;
+     transform: translate(-50%, -50%);
+    
+}
+.port-top,
+.port-left,
+.port-right,
+.port-bottom{
+    padding: 20px 20px;
+    background-color: cadetblue;
+    position: relative;
+}
+.port-top::after{
+    position: absolute;
+    content: " ";
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    top: 100%;
+     right: 49%;
+     transform: translateY(-50%) rotate(-45deg);
+    z-index: 1;
+}
+.port-top::before{
+    position: absolute;
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    bottom: -45%;
+     right: 49%;
+     border-radius: 50%;
+     transform: translateY(-50%) rotate(-45deg);
+     z-index: 1;
+    
+}
+.port-top:hover:before{
+    background-color: blue;
+}
+
+
+.port-bottom::after{
+    position: absolute;
+    content: " ";
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    bottom: 86%;
+     right: 45%;
+     transform: translateY(-50%) rotate(-45deg);
+    
+}
+.port-bottom::before{
+    position: absolute;
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    bottom: 118%;
+     right: 46%;
+     border-radius: 50%;
+     transform: translateY(-50%) rotate(-45deg);
+    
+}
+.port-bottom:hover:before{
+    background-color: blue;
+}
+.port-left::after{
+    position: absolute;
+    content: " ";
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    left: 96%;
+     bottom: 39%;
+     transform: translateY(-50%) rotate(-45deg);
+    
+}
+.port-left::before{
+    position: absolute;
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    bottom: 43%;
+     left: 129%;
+     border-radius: 50%;
+     transform: translateY(-50%) rotate(-45deg);
+    z-index: 1;
+}
+.port-left:hover:before{
+    background-color: blue;
+}
+.port-right::after{
+    position: absolute;
+    content: " ";
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    right: 96%;
+     bottom: 39%;
+     transform: translateY(-50%) rotate(-45deg);
+    
+}
+.port-right::before{
+    position: absolute;
+    content: " ";
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    bottom: 43%;
+     right: 129%;
+     border-radius: 50%;
+     transform: translateY(-50%) rotate(-45deg);
+    
+}
+.port-right:hover:before{
+    background-color: blue;
+}
+
+#service{
+    padding: 50px 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bann2.jpg) no-repeat center / cover; 
+}
+.service-text{
+    color: #fff;
+}
+
+
+
+#testimonial{
+    padding: 50px 0;
+}
+.test-item{
+    margin: 40px 0;
+}
+.test-round{
+height: 50px;
+width: 50px;
+border: 2px solid pink;
+border-radius: 50%;
+margin: 0 auto;
+}
+.test-round{
+    padding-top: 12px;
+    padding-left: 12px;
+    transition: 0.5s;
+}
+.slick-center .test-round{
+    background-color: crimson;
+    transform: scale(1.2);
+}
+.slick-center p{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(194,179,194,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(194,179,194,1);
+    box-shadow: 10px 10px 5px 0px rgba(194,179,194,1);
+}
+#testimonial{
+    position: relative;
+}
+#testimonial::after{
+    position: absolute;
+    content: ' ';
+    height: 380px;
+    width: 1px;
+    border: 1px dashed;
+    bottom: 14%;
+    left: 50%;
+}
+ #testimonial .next{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+   border: 2px solid red;
+    top: 170px;
+    left: 48%;
+    border-radius: 50%;
+    
+
+}
+#testimonial .prev{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+   border: 2px solid red;
+    bottom: 48px;
+    left: 49%;
+    border-radius: 50%;
+    z-index: 1;
+} 
+#testimonial .test-pera{
+    padding: 20px 20px;
+    background-color: pink;
+} 
+
+.lolita-img{
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: block !important;
+}
+
+.lolita-img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.lolita-text{
+    background-color: cornflowerblue;
+    padding: 20px 25px;
+}
+
+
+
+
+
+/* price part start */
+.priz-head{
+    background-color: gray;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    clip-path: polygon(0 0, 100% 0, 99% 83%, 0% 100%);
+}
+.priz-head:hover{
+background-color: pink;
+}
+.priz-btn{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: gold;
+}
+
+.priz-btn:hover{
+    background-color: cornflowerblue;
+}
+/* price part end */
+
+/** counter part st **/
+#counter-part{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.007)), url(../images/bann1.jpg) no-repeat center / cover;
+    padding: 100px 0;
+}
+.counter-main{
+    background-color: black;
+     transform: skewY(-2deg);  /* transform: skew(-5deg); etar maddome baka kora jai */
+}
+.counter-item{
+    text-align: center;
+    border: 2px solid #f1f1f1;
+    padding: 20px 30px;
+    
+}
+.counter-item h3{
+color: #f1f1f1;
+}
+.counter-item p{
+color: #f1f1f1;
+}
+
+.first-item{
+    border: 1px solid black;
+    padding-bottom: 20px;
+    
+}
+.first-img{
+    clip-path: polygon(0 1%, 100% 0, 100% 85%, 0% 100%);
+   
+
+}
+.first-icon{
+    margin-top: -50px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+
+.first-icon i{
+    height: 40px;
+    width: 40px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    line-height: 40px;
+}
+.first-item:hover .first-icon{
+    margin-top: 0;
+    opacity: 1;
+}
+
+/** last part end **/
+#market{
+    padding: 50px 0;
+    background-color: gray;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}
+.mark-slick{
+    transform: rotate(-deg);
+}
+.mar-item{
+    padding: 20px 0;
+    border: 2px solid red;
+    text-align: center;
+    
+}
+footer{
+    padding: 100px 0;
+    background-color: cornflowerblue;
+    margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
